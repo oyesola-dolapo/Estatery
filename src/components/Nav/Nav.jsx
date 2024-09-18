@@ -26,13 +26,13 @@ export default function Nav() {
   ];
 
   return (
-    <div className="lg:px-16 lg:py-6 px-4 py-4 bg-purpleShade-100 shadow-sm flex justify-between">
+    <div className="lg:px-10 xxl:px-16 lg:py-6 px-4 py-4 bg-purpleShade-50 flex justify-between backdrop-filter backdrop-blur-sm shadow-md">
       <div className="flex items-center gap-14">
         <div className="logo flex items-center gap-1">
           <img src="./assets/icons/logo.png" className="h-6" alt="" />
           <p className="font-medium">Estatery</p>
         </div>
-        <ul className="hidden lg:flex items-center gap-8">
+        <ul className="hidden lg:flex items-center gap-12">
           {navLinks.map((link) => {
             return (
               <li>

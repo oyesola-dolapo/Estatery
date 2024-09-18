@@ -14,9 +14,10 @@ export default {
         primaryColor: "#7065F0",
         secondaryColor: "#100A55",
         purpleShade: {
+          50: "#F7F7FD",
           100: "#F0EFFB",
-          200: "#E0DEF7"
-        }
+          200: "#E0DEF7",
+        },
       },
     },
   },

@@ -39,11 +39,11 @@ export default function Layout() {
         <div
           onClick={top}
           className="toTop shadow fixed bottom-[5rem] right-[1rem] cursor-pointer bg-webColor w-[3rem] h-[3rem] flex justify-center items-center rounded-full">
-          <i className="fa-solid fa-arrow-up text-black text-[1.5rem]"></i>
+          <i className="fa-solid fa-arrow-up text-primaryColor text-[1.5rem]"></i>
         </div>
       )}
-      <Socials />
-      <Footer />
+      {/* <Socials />
+      <Footer /> */}
     </div>
   );
 }
