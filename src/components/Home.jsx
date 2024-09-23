@@ -92,7 +92,7 @@ export default function Home() {
       </div>
       <section className="px-4 pt-10 pb-6 sm:px-20 lg:px-24 xxl:py-16 xxl:px-36 lg:flex">
         <div className="left-col lg:w-1/2">
-          <div className="rounded-lg bg-purpleShade-100 h-[550px] sm:h-[700px] lg:w-[80%] xxl:h-[600px] xxl:w-[80%] relative">
+          <div className="rounded-lg bg-purpleShade-100 h-[550px] sm:h-[700px] lg:w-[80%] lg:h-[600px] xxl:w-[80%] relative">
             <img
               src="assets/images/housebg.png"
               alt=""
