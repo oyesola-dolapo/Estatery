@@ -92,7 +92,7 @@ export default function Home() {
       </div>
       <section className="px-4 pt-10 pb-6 sm:px-20 lg:px-24 xxl:py-16 xxl:px-36 lg:flex">
         <div className="left-col lg:w-1/2">
-          <div className="rounded-lg bg-purpleShade-100 h-[550px] lg:w-[80%] xxl:h-[600px] xxl:w-[80%] relative">
+          <div className="rounded-lg bg-purpleShade-100 h-[550px] sm:h-[700px] lg:w-[80%] xxl:h-[600px] xxl:w-[80%] relative">
             <img
               src="assets/images/housebg.png"
               alt=""
@@ -116,7 +116,7 @@ export default function Home() {
               </div>
             </div>
             <div
-              className="w-[80%] sm:w-[70%] bg-white border-2 border-solid border-purple-100 absolute -bottom-10 left-0 right-0 mx-auto z-1 
+              className="w-[80%] sm:w-[50%] lg:w-[70%] bg-white border-2 border-solid border-purple-100 absolute -bottom-10 left-0 right-0 mx-auto z-1 
               rounded-lg flex items-center backdrop-filter backdrop-blur-sm shadow-lg shadow-purpleShade-100">
               {/* <img src="assets/icons/homePurpleBg.png" alt="" className="h-[3.5rem]"/> */}
               <div className="py-4 pl-6 relative  w-full">
