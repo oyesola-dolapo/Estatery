@@ -38,7 +38,7 @@ export default function Layout() {
       {visible && (
         <div
           onClick={top}
-          className="toTop shadow fixed bottom-[5rem] right-[1rem] cursor-pointer bg-webColor w-[3rem] h-[3rem] flex justify-center items-center rounded-full">
+          className="toTop bg-white shadow fixed bottom-[5rem] right-[1rem] cursor-pointer bg-webColor w-[3rem] h-[3rem] flex justify-center items-center rounded-full">
           <i className="fa-solid fa-arrow-up text-primaryColor text-[1.5rem]"></i>
         </div>
       )}
