@@ -26,7 +26,7 @@ export default function Nav() {
   ];
 
   return (
-    <div className="lg:px-10 xxl:px-16 lg:py-6 px-4 py-4 bg-purpleShade-50 flex justify-between backdrop-filter backdrop-blur-sm shadow-md">
+    <div className="lg:px-10 xxl:px-16 lg:py-6 px-4 py-4 bg-purpleShade-50 flex justify-between z-99 backdrop-filter backdrop-blur-sm shadow-md">
       <div className="flex items-center gap-14">
         <div className="logo flex items-center gap-1">
           <img src="./assets/icons/logo.png" className="h-6" alt="" />
