@@ -3,7 +3,7 @@ import React from "react";
 export default function Home() {
   return (
     <div>
-      <div className="lg:flex min-h-[80vh] lg:h-[95vh] bg-purpleShade-50">
+      <div className="lg:flex h-[80vh] lg:h-[95vh] bg-purpleShade-50">
         {/* LEFT SECTION WELCOME */}
         <div className="left-col flex flex-col justify-between lg:w-1/2 h-full px-4 pt-10 pb-6 lg:pl-24 xxl:py-16 xxl:pr-30 xxl:pl-36 z-50 overflow-visible">
           <div>
@@ -22,7 +22,7 @@ export default function Home() {
             </p>
           </div>
 
-          {/* BROWSE */}
+          {/* BROWSE */} 
           <div className="browse rounded-lg my-6 shadow-lg shadow-purpleShade-200">
             <div className="flex justify-between bg-white lg:w-[50%] rounded-tl-lg rounded-tr-lg">
               <div className="border-b-2 border-primaryColor text-primaryColor w-full py-4 text-center font-medium">
