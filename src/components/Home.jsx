@@ -3,9 +3,9 @@ import React from "react";
 export default function Home() {
   return (
     <div>
-      <div className="lg:flex min-h-[80vh] lg:h-[95vh] bg-purpleShade-50">
+      <div className="lg:flex lg:h-[95vh] bg-purpleShade-50">
         {/* LEFT SECTION WELCOME */}
-        <div className="left-col flex flex-col justify-between lg:w-1/2 h-full px-4 pt-10 pb-6 lg:pl-24 xxl:py-16 xxl:pr-30 xxl:pl-36 z-50 overflow-visible">
+        <div className="left-col flex flex-col justify-between lg:w-1/2 min-h-[80vh] lg:h-full px-4 pt-10 pb-6 lg:pl-24 xxl:py-16 xxl:pr-30 xxl:pl-36 z-50 overflow-visible">
           <div>
             <h1 className="text-[42px] leading-[1] sm:leading-none sm:text-6xl text-center lg:text-left xxl:text-7xl font-semibold lg:tracking-wider">
               Buy, rent, or sell your property{" "}
