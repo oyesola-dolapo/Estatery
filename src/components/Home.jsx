@@ -1,6 +1,30 @@
 import React from "react";
 
 export default function Home() {
+  const make_it_easy = [
+    {
+      icon: "./assets/images/virtualHome.png",
+      title: "Virtual home tour",
+      subtitle:
+        "You can communicate directly with landlords and we provide you with virtual tour before you buy or rent the property.",
+      style: "bg-primaryColor bg-opacity-[50%]",
+    },
+    {
+      icon: "./assets/icons/purpleHome.png",
+      title: "Find the best deal",
+      subtitle:
+        "Browse thousands of properties, save your favorites and set up search alerts so you don’t miss the best home deal!",
+      style: "bg-white text-black",
+    },
+    {
+      icon: "./assets/icons/apply.png",
+      title: "Get ready to apply",
+      subtitle:
+        "Find your dream house? You just need to do a little to no effort and you can start move in to your new dream home!",
+      style: "bg-primaryColor",
+    },
+  ];
+
   return (
     <div>
       <div className="lg:flex lg:h-[95vh] bg-purpleShade-50">
@@ -22,14 +46,18 @@ export default function Home() {
             </p>
           </div>
 
-          {/* BROWSE */} 
+          {/* BROWSE */}
           <div className="browse rounded-lg my-6 shadow-lg shadow-purpleShade-200">
             <div className="flex justify-between bg-white lg:w-[50%] rounded-tl-lg rounded-tr-lg">
               <div className="border-b-2 border-primaryColor text-primaryColor w-full py-4 text-center font-medium">
                 Rent
               </div>
-              <div className="w-full py-4 text-center border-b-2 border-purpleShade-200">Buy</div>
-              <div className="w-full py-4 text-center border-b-2 border-purpleShade-200">Sell</div>
+              <div className="w-full py-4 text-center border-b-2 border-purpleShade-200">
+                Buy
+              </div>
+              <div className="w-full py-4 text-center border-b-2 border-purpleShade-200">
+                Sell
+              </div>
             </div>
             {/* MOBILE VIEW */}
             <div className="flex py-4 px-4 w-full bg-white lg:hidden rounded-bl-lg rounded-br-lg">
@@ -289,6 +317,40 @@ export default function Home() {
               alt=""
             />
           </div>
+        </div>
+      </section>
+
+      {/* MAKE IS EASY SECTION */}
+      <section className=" bg-secondaryColor text-white">
+        <div className="px-4 pt-10 pb-6 sm:px-20 lg:px-24 xxl:pt-16 xxl:px-36 lg:flex justify-between">
+          <h1 className="text-center text-4xl text-white font-medium lg:w-[40%] lg:text-start lg:mt-4">
+            We make it easy for{" "}
+            <span className="text-primaryColor">tenants</span> and{" "}
+            <span className="text-primaryColor">landlords</span>.
+          </h1>
+          <p className="text-white text-lg text-center tracking-wide mt-4 opacity-[50%] lg:w-[40%] lg:text-start">
+            Whether it’s selling your current home, getting financing, or buying
+            a new home, we make it easy and efficient. The best part? you’ll
+            save a bunch of money and time with our services.
+          </p>
+        </div>
+
+        {/*  */}
+        <div className="px-4 pb-6 sm:px-20 lg:px-24 xxl:px-36 mt-8 flex flex-col lg:flex-row overflow-x-scroll gap-10 hide-scrollbar">
+          {make_it_easy.map((easy) => {
+            return (
+              <div
+                className={`${easy.style} rounded-lg p-6 lg:min-w-[500px] xl:min-w-[700px] lg:h-max lg:flex gap-6`}>
+                <img src={easy.icon} alt="" className="lg:h-[60px] xl:h-[80px] lg:mt-4" />
+                <div className="mt-4">
+                  <h1 className="text-3xl xl:text-4xl font-bold">{easy.title}</h1>
+                  <p className="text-xl lg:text-base xl:text-xl tracking-wide opacity-[50%] font-light mt-4">
+                    {easy.subtitle}
+                  </p>
+                </div>
+              </div>
+            );
+          })}
         </div>
       </section>
     </div>
