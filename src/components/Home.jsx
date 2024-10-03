@@ -5,7 +5,7 @@ export default function Home() {
     <div>
       <div className="lg:flex h-max sm:h-[90vh] bg-purpleShade-50">
         {/* LEFT SECTION WELCOME */}
-        <div className="left-col flex flex-col justify-between lg:w-1/2 h-full px-4 pt-10 pb-6 lg:pl-24 xxl:py-16 xxl:pr-30 xxl:pl-36">
+        <div className="left-col flex flex-col justify-between lg:w-1/2 h-full px-4 pt-10 pb-6 lg:pl-24 xxl:py-16 xxl:pr-30 xxl:pl-36 z-50 overflow-visible">
           <div>
             <h1 className="text-[42px] leading-[1] sm:leading-none sm:text-6xl text-center lg:text-left xxl:text-7xl font-semibold lg:tracking-wider">
               Buy, rent, or sell your property{" "}
@@ -21,7 +21,51 @@ export default function Home() {
               commisions.
             </p>
           </div>
-          <div className="browse"></div>
+
+          {/* BROWSE */}
+          <div className="browse rounded-lg my-6 shadow-lg shadow-purpleShade-200">
+            <div className="flex justify-between bg-white lg:w-[50%] rounded-tl-lg rounded-tr-lg">
+              <div className="border-b-2 border-primaryColor text-primaryColor w-full py-4 text-center font-medium">
+                Rent
+              </div>
+              <div className="w-full py-4 text-center border-b-2 border-purpleShade-200">Buy</div>
+              <div className="w-full py-4 text-center border-b-2 border-purpleShade-200">Sell</div>
+            </div>
+            {/* MOBILE VIEW */}
+            <div className="flex py-4 px-4 w-full bg-white lg:hidden rounded-bl-lg rounded-br-lg">
+              <div className="w-full">
+                <input
+                  type="text"
+                  placeholder="Search Location"
+                  className="h-full w-full outline-none"
+                />
+              </div>
+              <div className="rounded-lg bg-primaryColor px-4 py-3 cursor-pointer">
+                <i className="fa-solid fa-magnifying-glass text-white"></i>
+              </div>
+            </div>
+
+            {/* DESKTOP VIEW */}
+            <div className="bg-white rounded-lg hidden lg:flex justify-between w-[140%] py-6">
+              <div className="w-[25%] pl-8 border-r-2 border-black border-opacity-[20%] cursor-pointer">
+                <p className="opacity-[50%]">Location</p>
+                <h1 className="text-md font-medium mt-1">Lagos, Nigeria</h1>
+              </div>
+              <div className="w-[40%] pl-8 border-r-2 border-black border-opacity-[20%] cursor-pointer">
+                <p className="opacity-[50%]">When</p>
+                <h1 className="text-md font-medium mt-1">
+                  Select Move-in date &nbsp; &nbsp;{" "}
+                  <i class="fa-regular fa-calendar"></i>
+                </h1>
+              </div>
+              <div className="w-[35%] flex justify-center items-center">
+                <button className="px-8 py-4 text-white rounded-lg bg-primaryColor">
+                  Browse Properties
+                </button>
+              </div>
+            </div>
+          </div>
+
           <div className="flex gap-10 justify-center lg:justify-start">
             <div>
               <img src="./assets/icons/renters.png" alt="" />
@@ -180,12 +224,13 @@ export default function Home() {
           <div className="left-col lg:w-1/2 lg:h-full flex flex-col justify-between py-10 pl-8 pr-8 lg:pr-0 lg:pl-8 lg:py-14 xxl:pl-14">
             <div>
               <h1 className="text-4xl xxl:text-6xl font-bold text-secondaryColor">
-                The new way to find <br className="hidden lg:flex" />{" "}
-                your new  home
+                The new way to find <br className="hidden lg:flex" /> your new
+                home
               </h1>
               <p className=" mt-4 lg:mt-6 opacity-[50%] text-lg lg:text-sm xxl:text-xl">
-                Find your dream place to live in with <br className="hidden lg:flex" /> more than 10k+
-                properties listed.
+                Find your dream place to live in with{" "}
+                <br className="hidden lg:flex" /> more than 10k+ properties
+                listed.
               </p>
             </div>
 
@@ -211,7 +256,7 @@ export default function Home() {
                   alt=""
                 />
                 <div className="lg:flex lg:items-center lg:flex-col h-full">
-                  <h1 className="text-xl font-bold">7.4%</h1>
+                  <h1 className="text-xl font-bold">3,856</h1>
                   <p className="text-sm opacity-[50%] mt-2">
                     Property in Sell & Rent
                   </p>
@@ -224,14 +269,16 @@ export default function Home() {
                   alt=""
                 />
                 <div className="lg:flex lg:items-center lg:flex-col h-full">
-                  <h1 className="text-xl font-bold">7.4%</h1>
+                  <h1 className="text-xl font-bold">2,502</h1>
                   <p className="text-sm opacity-[50%] mt-2">
                     Daily Completed Transactions
                   </p>
                 </div>
               </div>
-             
             </div>
+            <button className="sm:hidden w-max py-2 px-4 bg-secondaryColor text-white rounded-lg mt-6">
+              Browse Properties
+            </button>
           </div>
 
           {/* RIGHT NEW WAY */}
