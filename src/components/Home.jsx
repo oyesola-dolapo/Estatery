@@ -29,7 +29,7 @@ export default function Home() {
     <div>
       <div className="lg:flex lg:h-[95vh] bg-purpleShade-50">
         {/* LEFT SECTION WELCOME */}
-        <div className="left-col flex flex-col justify-between lg:w-1/2 min-h-[80vh] lg:h-full px-4 pt-10 pb-6 lg:pl-24 xxl:py-16 xxl:pr-30 xxl:pl-36 z-50 overflow-visible">
+        <div className="left-col flex flex-col justify-between lg:w-1/2 min-h-[80vh] lg:h-full px-4 pt-10 pb-6 sm:pb-12 sm:px-20 lg:pl-24 xxl:py-16 xxl:pr-30 xxl:pl-36 z-50 overflow-visible">
           <div>
             <h1 className="text-[42px] leading-[1] sm:leading-none sm:text-6xl text-center lg:text-left xxl:text-7xl font-semibold lg:tracking-wider">
               Buy, rent, or sell your property{" "}
@@ -49,18 +49,18 @@ export default function Home() {
           {/* BROWSE */}
           <div className="browse rounded-lg my-6 shadow-lg shadow-purpleShade-200">
             <div className="flex justify-between bg-white lg:w-[50%] rounded-tl-lg rounded-tr-lg">
-              <div className="border-b-2 border-primaryColor text-primaryColor w-full py-4 text-center font-medium">
+              <div className="border-b-2 border-primaryColor text-primaryColor w-full py-4 sm:py-8 lg:py-4 sm:text-xl lg:text-base text-center font-medium">
                 Rent
               </div>
-              <div className="w-full py-4 text-center border-b-2 border-purpleShade-200">
+              <div className="w-full py-4 sm:py-8 lg:py-4 sm:text-xl lg:text-base text-center border-b-2 border-purpleShade-200">
                 Buy
               </div>
-              <div className="w-full py-4 text-center border-b-2 border-purpleShade-200">
+              <div className="w-full py-4 sm:py-8 lg:py-4 sm:text-xl lg:text-base text-center border-b-2 border-purpleShade-200">
                 Sell
               </div>
             </div>
             {/* MOBILE VIEW */}
-            <div className="flex py-4 px-4 w-full bg-white lg:hidden rounded-bl-lg rounded-br-lg">
+            <div className="flex py-4 px-4 sm:py-10 w-full bg-white lg:hidden rounded-bl-lg rounded-br-lg">
               <div className="w-full">
                 <input
                   type="text"
@@ -69,7 +69,7 @@ export default function Home() {
                 />
               </div>
               <div className="rounded-lg bg-primaryColor px-4 py-3 cursor-pointer">
-                <i className="fa-solid fa-magnifying-glass text-white"></i>
+                <i className="fa-solid fa-magnifying-glass text-white sm:text-2xl"></i>
               </div>
             </div>
 
@@ -340,17 +340,29 @@ export default function Home() {
           {make_it_easy.map((easy) => {
             return (
               <div
-                className={`${easy.style} rounded-lg p-6 lg:min-w-[500px] xl:min-w-[700px] lg:h-max lg:flex gap-6`}>
+                className={`${easy.style} rounded-lg p-6 sm:w-[85%] mx-auto lg:mx-0 lg:min-w-[500px] xl:min-w-[700px] lg:h-max lg:flex gap-6`}>
                 <img src={easy.icon} alt="" className="lg:h-[60px] xl:h-[80px] lg:mt-4" />
                 <div className="mt-4">
-                  <h1 className="text-3xl xl:text-4xl font-bold">{easy.title}</h1>
-                  <p className="text-xl lg:text-base xl:text-xl tracking-wide opacity-[50%] font-light mt-4">
+                  <h1 className="text-2xl xl:text-4xl font-bold">{easy.title}</h1>
+                  <p className="lg:text-base xl:text-xl tracking-wide opacity-[50%] font-light mt-4">
                     {easy.subtitle}
                   </p>
                 </div>
               </div>
             );
           })}
+        </div>
+
+        {/*  */}
+        <div className="px-4 pb-6 sm:px-20 lg:px-24 xxl:px-36 mt-2">
+          <div className="">
+            <h1 className="text-center text-2xl font-bold lg:text-3xl">Are you a landlord?</h1>
+            <p className="text-center opacity-[70%] mt-2 lg:text-xl">Discover ways to increase your home's value and  get listed. No Spam.</p>
+          </div>
+          <div className="mt-6 lg:bg-white lg:flex lg:rounded-lg lg:px-4 lg:py-4 sm:w-[75%] lg:w-[60%] mx-auto">
+            <input type="text" className="rounded-lg w-full py-3 px-4 lg:w-[100%]" placeholder="Enter your email address" />
+            <button className="text-center py-3 lg:py-5 bg-primaryColor w-full rounded-lg mt-4 font-medium lg:mt-0 lg:w-[50%]">Submit</button>
+          </div>
         </div>
       </section>
     </div>
