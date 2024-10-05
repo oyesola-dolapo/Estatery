@@ -97,7 +97,7 @@ export default function Home() {
           <div className="flex gap-10 justify-center lg:justify-start">
             <div>
               <img src="./assets/icons/renters.png" alt="" />
-              <h1 className="text-1xl sm:text-2xl font-bold mt-6 text-primaryColor tracking-wider">
+              <h1 className="text-1xl sm:text-2xl font-bold mt-4 text-primaryColor tracking-wider">
                 50K+ Renters
               </h1>
               <p className="text-sm sm:text-[15px] sm:mt-2 tracking-wider">
@@ -106,7 +106,7 @@ export default function Home() {
             </div>
             <div>
               <img src="./assets/icons/property.png" alt="" />
-              <h1 className="text-1xl sm:text-2xl font-bold mt-6 text-primaryColor tracking-wider">
+              <h1 className="text-1xl sm:text-2xl font-bold mt-4 text-primaryColor tracking-wider">
                 10K+ Property
               </h1>
               <p className="hidden sm:block text-sm sm:text-[15px] sm:mt-2 tracking-wider">
