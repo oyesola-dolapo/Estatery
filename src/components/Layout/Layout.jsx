@@ -42,8 +42,8 @@ export default function Layout() {
           <i className="fa-solid fa-arrow-up text-primaryColor text-[1.5rem]"></i>
         </div>
       )}
-      {/* <Socials />
-      <Footer /> */}
+      <Footer />
+      <Socials />
     </div>
   );
 }

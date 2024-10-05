@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   const footerItems = [
@@ -97,24 +98,24 @@ export default function Footer() {
     },
   ];
   return (
-    <footer className="bg-white px-8 py-4 pb-6 sm:px-20 lg:px-24 xxl:py-16 xxl:px-36 lg:flex lg:items-start justify-center lg:gap-14">
+    <footer className="bg-white px-8 py-4 pb-6 sm:px-10 lg:px-24 xxl:pt-6 xxl:px-36 lg:flex lg:items-start justify-center lg:gap-14">
       <div className="logo flex items-center gap-1 lg:mt-4">
         <img src="./assets/icons/logo.png" className="h-6" alt="" />
-        <p className="font-bold">Estatery</p>
+        <p className="font-bold xxl:text-xl">Estatery</p>
       </div>
 
       <div className="flex flex-wrap justify-between gap-4 mt-4">
         {footerItems.map((item) => {
           return (
             <div className="basis-[40%] sm:basis-[30%] lg:basis-[25%]">
-              <h2 className="text-sm font-bold tracking-wide mb-2">
+              <h2 className="text-sm font-bold tracking-wide mb-2 xxl:text-xl">
                 {item.title}
               </h2>
-              <ul className="flex flex-col text-sm gap-2 font-extralight">
+              <ul className="flex flex-col text-sm gap-2 xxl:gap-3 font-extralight xxl:text-lg">
                 {item.items.map((subItem) => {
                   return (
                     <li>
-                      <a href="#">{subItem.title}</a>
+                      <Link to="#">{subItem.title}</Link>
                     </li>
                   );
                 })}
@@ -123,6 +124,8 @@ export default function Footer() {
           );
         })}
       </div>
+
+     
     </footer>
   );
 }

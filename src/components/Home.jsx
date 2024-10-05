@@ -29,7 +29,7 @@ export default function Home() {
     <div>
       <div className="lg:flex lg:h-[95vh] bg-purpleShade-50">
         {/* LEFT SECTION WELCOME */}
-        <div className="left-col flex flex-col justify-between lg:w-1/2 min-h-[80vh] lg:h-full px-4 pt-10 pb-6 sm:pb-12 sm:px-20 lg:pl-24 xxl:py-16 xxl:pr-30 xxl:pl-36 z-50 overflow-visible">
+        <div className="left-col flex flex-col justify-between lg:w-1/2 min-h-[80vh] lg:h-full px-4 pt-10 pb-6 sm:pb-12 sm:px-10 lg:pl-24 xxl:py-16 xxl:pr-30 xxl:pl-36 z-50 overflow-visible">
           <div>
             <h1 className="text-[42px] leading-[1] sm:leading-none sm:text-6xl text-center lg:text-left xxl:text-7xl font-semibold lg:tracking-wider">
               Buy, rent, or sell your property{" "}
@@ -167,7 +167,7 @@ export default function Home() {
       </div>
 
       {/* SEE MORE SECTION */}
-      <section className="px-4 pt-10 pb-6 sm:px-20 lg:px-24 xxl:py-16 xxl:px-36 lg:flex">
+      <section className="px-4 pt-10 pb-6 sm:px-10 lg:px-24 xxl:py-16 xxl:px-36 lg:flex">
         {/* LECT SEE MORE */}
         <div className="left-col lg:w-1/2">
           <div className="rounded-lg bg-purpleShade-100 h-[550px] sm:h-[700px] lg:w-[80%] lg:h-[600px] xxl:w-[80%] relative">
@@ -322,7 +322,7 @@ export default function Home() {
 
       {/* MAKE IS EASY SECTION */}
       <section className=" bg-secondaryColor text-white">
-        <div className="px-4 pt-10 pb-6 sm:px-20 lg:px-24 xxl:pt-16 xxl:px-36 lg:flex justify-between">
+        <div className="px-4 pt-10 pb-6 sm:px-10 lg:px-24 xxl:pt-16 xxl:px-36 lg:flex justify-between">
           <h1 className="text-center text-4xl text-white font-medium lg:w-[40%] lg:text-start lg:mt-4">
             We make it easy for{" "}
             <span className="text-primaryColor">tenants</span> and{" "}
@@ -336,7 +336,7 @@ export default function Home() {
         </div>
 
         {/*  */}
-        <div className="px-4 pb-6 sm:px-20 lg:px-24 xxl:px-36 mt-2 flex flex-col lg:flex-row overflow-x-scroll gap-6 lg:gap-10 hide-scrollbar">
+        <div className="px-4 pb-6 sm:px-10 lg:px-24 xxl:px-36 mt-2 flex flex-col lg:flex-row overflow-x-scroll gap-6 lg:gap-10 hide-scrollbar">
           {make_it_easy.map((easy) => {
             return (
               <div
@@ -354,7 +354,7 @@ export default function Home() {
         </div>
 
         {/*  */}
-        <div className="px-4 pb-6 lg:pb-10 xxl:pb-16 sm:px-20 lg:px-24 xxl:px-36 xxl:mt-8 mt-2">
+        <div className="px-4 pb-6 lg:pb-10 xxl:pb-16 sm:px-10 lg:px-24 xxl:px-36 xxl:mt-8 mt-2">
           <div className="">
             <h1 className="text-center text-2xl font-bold lg:text-3xl">Are you a landlord?</h1>
             <p className="text-center opacity-[70%] mt-2 lg:text-xl">Discover ways to increase your home's value and  get listed. No Spam.</p>

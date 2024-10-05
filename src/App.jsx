@@ -14,7 +14,6 @@ function App() {
           </Route>
         </Routes>
       </Router>
-      <Footer />
     </div>
   );
 }
