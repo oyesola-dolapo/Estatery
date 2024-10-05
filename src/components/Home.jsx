@@ -360,7 +360,7 @@ export default function Home() {
             <p className="text-center opacity-[70%] mt-2 lg:text-xl">Discover ways to increase your home's value and  get listed. No Spam.</p>
           </div>
           <div className="mt-6 lg:bg-white lg:flex lg:rounded-lg lg:px-4 lg:py-4 sm:w-[75%] lg:w-[60%] mx-auto">
-            <input type="text" className="rounded-lg w-full py-3 px-4 lg:w-[100%]" placeholder="Enter your email address" />
+            <input type="text" className="rounded-lg w-full py-3 px-4 lg:w-[100%] text-black outline-none" placeholder="Enter your email address" />
             <button className="text-center py-3 lg:py-5 bg-primaryColor w-full rounded-lg mt-4 font-medium lg:mt-0 lg:w-[50%]">Submit</button>
           </div>
         </div>
