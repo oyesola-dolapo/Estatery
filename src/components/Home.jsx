@@ -60,7 +60,7 @@ export default function Home() {
               </div>
             </div>
             {/* MOBILE VIEW */}
-            <div className="flex py-4 px-4 sm:py-10 w-full bg-white lg:hidden rounded-bl-lg rounded-br-lg">
+            <div className="flex py-4 px-4 sm:py-8 w-full bg-white lg:hidden rounded-bl-lg rounded-br-lg">
               <div className="w-full">
                 <input
                   type="text"
@@ -336,7 +336,7 @@ export default function Home() {
         </div>
 
         {/*  */}
-        <div className="px-4 pb-6 sm:px-20 lg:px-24 xxl:px-36 mt-8 flex flex-col lg:flex-row overflow-x-scroll gap-10 hide-scrollbar">
+        <div className="px-4 pb-6 sm:px-20 lg:px-24 xxl:px-36 mt-2 flex flex-col lg:flex-row overflow-x-scroll gap-6 lg:gap-10 hide-scrollbar">
           {make_it_easy.map((easy) => {
             return (
               <div
@@ -354,7 +354,7 @@ export default function Home() {
         </div>
 
         {/*  */}
-        <div className="px-4 pb-6 sm:px-20 lg:px-24 xxl:px-36 mt-2">
+        <div className="px-4 pb-6 lg:pb-10 xxl:pb-16 sm:px-20 lg:px-24 xxl:px-36 xxl:mt-8 mt-2">
           <div className="">
             <h1 className="text-center text-2xl font-bold lg:text-3xl">Are you a landlord?</h1>
             <p className="text-center opacity-[70%] mt-2 lg:text-xl">Discover ways to increase your home's value and  get listed. No Spam.</p>
