@@ -28,7 +28,7 @@ export default function Socials() {
       <h1 className="text-xs sm:text-base xxl:text-xl text-center">
         Developer by{" "}
         <a
-          href="https://www.ferrazi.netlify.app"
+          href="https://ferrazi.netlify.app/"
           target="_blank"
           className="font-bold text-primaryColor underline">
           Dolapo Oyesola
@@ -37,7 +37,7 @@ export default function Socials() {
         <a
           href="https://www.figma.com/@illiyinstudio"
           target="_blank"
-          
+
           className="font-bold text-primaryColor underline">
           Illiyin Studio
         </a>
