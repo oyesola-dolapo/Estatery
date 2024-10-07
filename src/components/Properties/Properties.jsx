@@ -105,14 +105,14 @@ export default function Properties() {
               <img src={item.img} alt="" className="w-full object-cover" />
               <div className="p-3">
                 <div className="flex justify-between border-b-2 border-solid border-purpleShade-200 pb-3">
-                  <div className="">
+                  <div className="w-full">
                     <h2 className="text-primaryColor text-xl font-bold">
                       {item.price}
                       <span className="text-black opacity-[50%] text-sm font-normal">
                         /month
                       </span>
                     </h2>
-                    <h1 className="font-bold text-xl my-2 truncate w-[95%] sm:whitespace-normal sm:w-full">
+                    <h1 className="font-bold text-xl my-2 truncate w-[85%] sm:whitespace-normal sm:w-full">
                       {item.title}
                     </h1>
                     <p className="text-sm opacity-[50%]">
