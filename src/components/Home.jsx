@@ -1,5 +1,6 @@
 import React from "react";
 import Properties from "./Properties/Properties";
+import mapBg from "/assets/images/mapBg.png";
 
 export default function Home() {
   const make_it_easy = [
@@ -121,7 +122,9 @@ export default function Home() {
         </div>
 
         {/* RIGHT COLUMN HOME */}
-        <div className="hidden lg:block right-col lg:w-1/2 h-full bg-[url('./assets/images/mapBg.png')] bg-cover">
+        <div
+          className="hidden lg:block right-col lg:w-1/2 h-full bg-cover"
+          style={{ backgroundImage: `url(${mapBg})` }}>
           <div className="bg-white w-max rounded-lg px-4 py-4 mt-12">
             <div className="flex gap-4 xxl:gap-5">
               <img
