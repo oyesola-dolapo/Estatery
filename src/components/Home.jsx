@@ -48,7 +48,7 @@ export default function Home() {
           </div>
 
           {/* BROWSE */}
-          <div className="browse rounded-lg my-6 shadow-lg shadow-purpleShade-200">
+          <div className="browse rounded-lg my-14 shadow-lg shadow-purpleShade-200">
             <div className="flex justify-between bg-white lg:w-[50%] rounded-tl-lg rounded-tr-lg">
               <div className="border-b-2 border-primaryColor text-primaryColor w-full py-4 sm:py-8 lg:py-4 sm:text-xl lg:text-base text-center font-medium">
                 Rent
@@ -169,7 +169,7 @@ export default function Home() {
       {/* SEE MORE SECTION */}
       <section className="px-5 pt-10 pb-6 sm:px-10 lg:px-24 xxl:py-16 xxl:px-36 lg:flex">
         {/* LECT SEE MORE */}
-        <div className="left-col lg:w-1/2">
+        <div className="left-col sm:hidden md:block lg:w-1/2">
           <div className="rounded-lg bg-purpleShade-100 h-[550px] sm:h-[700px] lg:w-[80%] lg:h-[600px] xxl:w-[80%] relative">
             <img
               src="assets/images/housebg.png"
@@ -215,7 +215,7 @@ export default function Home() {
         </div>
 
         {/* RIGHT SEE MORE */}
-        <div className="right-col pt-20 lg:w-1/2 sm:flex sm:justify-center lg:items-center">
+        <div className="right-col pt-20 sm:pt-4 md:pt-20 lg:w-1/2 sm:flex sm:justify-center lg:items-center">
           <div>
             <div className="flex bg-purpleShade-100 rounded-lg p-1 border-2 border-solid lg:w-[50%]">
               <div className="bg-white border-2 border-solid w-1/2 rounded-lg py-3 lg:py-2">

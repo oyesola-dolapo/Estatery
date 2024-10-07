@@ -98,7 +98,7 @@ export default function Properties() {
         </div>
       </div>
 
-      <div className="flex gap-6 overflow-x-scroll lg:flex-wrap lg:overflow-hidden lg:justify-around xxl:justify-center xxl:gap-10 xxl:mt-10 lg:px-4 hide-scrollbar scroll-smooth mt-4">
+      <div className="w-full flex gap-6 overflow-x-scroll lg:flex-wrap lg:overflow-hidden lg:justify-around xxl:gap-10 xxl:mt-10 lg:px-4 hide-scrollbar scroll-smooth mt-4">
         {properties.map((item) => {
           return (
             <div className="rounded-lg overflow-hidden min-w-[70%] sm:min-w-[50%] lg:min-w-[27%] border-2 border-solid border-purpleShade-200">
@@ -135,7 +135,8 @@ export default function Properties() {
                   &nbsp; {item.bath}{" "}
                   <span className="hidden lg:flex">&nbsp; Bathrooms</span>
                 </p>
-                      <p className="text-xs font-extralight flex items-center
+                <p
+                  className="text-xs font-extralight flex items-center
                 ">
                   <i class="fa-solid fa-ruler text-primaryColor"></i>&nbsp;
                   &nbsp; {item.dimen} m &sup2;{" "}
