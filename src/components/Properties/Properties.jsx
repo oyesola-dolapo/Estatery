@@ -3,7 +3,7 @@ import React from "react";
 export default function Properties() {
   const properties = [
     {
-      img: "./assets/images/properties/home1.png",
+      img: "./assets/images/properties/home1.webp",
       title: "Palm Harbor",
       price: "$4,200",
       location: "Highland Lake, FL",
@@ -14,7 +14,7 @@ export default function Properties() {
       dimen: "5 x 7",
     },
     {
-      img: "./assets/images/properties/home1.png",
+      img: "./assets/images/properties/home1.webp",
       title: "Beverly Springfield",
       price: "$2,700",
       location: "Lagos, Tx",
@@ -25,7 +25,7 @@ export default function Properties() {
       dimen: "6 x 7.5",
     },
     {
-      img: "./assets/images/properties/home1.png",
+      img: "./assets/images/properties/home1.webp",
       title: "Beverly Springfield",
       price: "$2,700",
       location: "Lagos, Tx",
@@ -36,7 +36,7 @@ export default function Properties() {
       dimen: "6 x 7.5",
     },
     {
-      img: "./assets/images/properties/home1.png",
+      img: "./assets/images/properties/home1.webp",
       title: "Beverly Springfield",
       price: "$2,700",
       location: "Lagos, Tx",
@@ -47,7 +47,7 @@ export default function Properties() {
       dimen: "6 x 7.5",
     },
     {
-      img: "./assets/images/properties/home1.png",
+      img: "./assets/images/properties/home1.webp",
       title: "Beverly Springfield",
       price: "$2,700",
       location: "Lagos, Tx",
@@ -58,7 +58,7 @@ export default function Properties() {
       dimen: "6 x 7.5",
     },
     {
-      img: "./assets/images/properties/home1.png",
+      img: "./assets/images/properties/home1.webp",
       title: "Beverly Springfield",
       price: "$2,700",
       location: "Lagos, Tx",

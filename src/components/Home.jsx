@@ -1,6 +1,6 @@
 import React from "react";
 import Properties from "./Properties/Properties";
-import mapBg from "/assets/images/mapBg.png";
+import mapBg from "/assets/images/mapBg.webp";
 
 export default function Home() {
   const make_it_easy = [
@@ -128,7 +128,7 @@ export default function Home() {
           <div className="bg-white w-max rounded-lg px-4 py-4 mt-12">
             <div className="flex gap-4 xxl:gap-5">
               <img
-                src="assets/images/user.png"
+                src="assets/images/user.webp"
                 className="rounded-full w-[50px] h-[50px] xxl:w-[65px] xxl:h-[65px]"
                 alt=""
               />
@@ -172,11 +172,11 @@ export default function Home() {
 
       {/* SEE MORE SECTION */}
       <section className="px-5 pt-10 pb-6 sm:px-10 lg:px-24 xxl:py-16 xxl:px-36 lg:flex">
-        {/* LECT SEE MORE */}
+        {/* LEFT SEE MORE */}
         <div className="left-col sm:hidden lg:block lg:w-1/2">
           <div className="rounded-lg bg-purpleShade-100 h-[550px] sm:h-[700px] lg:w-[80%] lg:h-[600px] xxl:w-[80%] relative">
             <img
-              src="assets/images/housebg.png"
+              src="assets/images/housebg.webp"
               alt=""
               className="h-full w-full object-cover rounded-lg"
             />
@@ -248,6 +248,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+
       {/* PROPERTIES */}
       <Properties />
 
@@ -318,7 +319,7 @@ export default function Home() {
           {/* RIGHT NEW WAY */}
           <div className="lg:w-1/2 lg:h-full h-[200px] relative overflow-hidden">
             <img
-              src="./assets/images/newHome.png"
+              src="./assets/images/newHome.webp"
               className="h-[350px] lg:h-full lg:w-full absolute -top-5 object-cover lg:object-contain"
               alt=""
             />
