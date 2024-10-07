@@ -166,10 +166,11 @@ export default function Home() {
           </div>
         </div>
       </section>
+
       {/* SEE MORE SECTION */}
       <section className="px-5 pt-10 pb-6 sm:px-10 lg:px-24 xxl:py-16 xxl:px-36 lg:flex">
         {/* LECT SEE MORE */}
-        <div className="left-col sm:hidden md:block lg:w-1/2">
+        <div className="left-col sm:hidden lg:block lg:w-1/2">
           <div className="rounded-lg bg-purpleShade-100 h-[550px] sm:h-[700px] lg:w-[80%] lg:h-[600px] xxl:w-[80%] relative">
             <img
               src="assets/images/housebg.png"
@@ -215,7 +216,7 @@ export default function Home() {
         </div>
 
         {/* RIGHT SEE MORE */}
-        <div className="right-col pt-20 sm:pt-4 md:pt-20 lg:w-1/2 sm:flex sm:justify-center lg:items-center">
+        <div className="right-col pt-20 sm:pt-4 lg:pt-20 lg:w-1/2 sm:flex sm:justify-center lg:items-center">
           <div>
             <div className="flex bg-purpleShade-100 rounded-lg p-1 border-2 border-solid lg:w-[50%]">
               <div className="bg-white border-2 border-solid w-1/2 rounded-lg py-3 lg:py-2">
@@ -321,6 +322,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      
       {/* MAKE IS EASY SECTION */}
       <section className=" bg-secondaryColor text-white">
         <div className="px-5 pt-6 pb-6 sm:px-10 lg:px-24 xxl:pt-16 xxl:px-36 lg:flex justify-between">
