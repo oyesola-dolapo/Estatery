@@ -26,7 +26,7 @@ export default function Socials() {
   return (
     <div className="lg:flex justify-around px-8 pb-6 pt-2 sm:px-10">
       <h1 className="text-xs sm:text-base xxl:text-xl text-center">
-        Developer by{" "}
+        Developed by{" "}
         <a
           href="https://ferrazi.netlify.app/"
           target="_blank"

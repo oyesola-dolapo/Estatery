@@ -1,4 +1,5 @@
 import React from "react";
+import Properties from "./Properties/Properties";
 
 export default function Home() {
   const make_it_easy = [
@@ -27,23 +28,23 @@ export default function Home() {
 
   return (
     <div>
-      <div className="lg:flex lg:h-[95vh] bg-purpleShade-50">
+      <section className="lg:flex lg:h-[90vh] bg-purpleShade-50">
         {/* LEFT SECTION WELCOME */}
         <div className="left-col flex flex-col justify-between lg:w-1/2 min-h-[80vh] lg:h-full px-4 pt-6 lg:pt-10 pb-6 sm:pb-12 sm:px-10 lg:pl-24 xxl:py-16 xxl:pr-30 xxl:pl-36 z-50 overflow-visible">
           <div>
-            <h1 className="text-[42px] leading-[1] sm:leading-none sm:text-6xl text-center lg:text-left xxl:text-7xl font-semibold lg:tracking-wider">
+            <h1 className="text-[42px] leading-[1] sm:leading-none sm:text-6xl lg:text-5xl text-center lg:text-start xxl:text-7xl font-semibold lg:tracking-wider">
               Buy, rent, or sell your property{" "}
               <br className="hidden xxl:block" /> easily
             </h1>
-            <p className="hidden lg:block tracking-wider text-[18px] xxl:text-[24px] mt-6">
-              A great platform to buy, sell, or even rent your <br /> properties
-              without any commisions.
-            </p>
-            <p className="sm:tracking-wider mt-6 text-center text-xl font-light lg:hidden">
-              A great platform to buy, sell, or <br className="sm:hidden" />{" "}
-              even rent your properties without <br className="sm:hidden" /> any
+            <p className="tracking-wider text-center lg:text-start text-[18px] sm:text-2xl lg:text-base xxl:text-[20px] mt-6">
+              A great platform to buy, sell, or even rent your{" "}
+              <br className="hidden lg:block" /> properties without any
               commisions.
             </p>
+            {/* <p className="sm:tracking-wider mt-6 text-center text-xl font-light lg:hidden">
+              A great platform to buy, sell, or even rent your properties
+              without any commisions.
+            </p> */}
           </div>
 
           {/* BROWSE */}
@@ -94,25 +95,25 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="flex gap-10 justify-center lg:justify-start">
+          <div className="flex lg:gap-10 justify-around lg:justify-start">
             <div>
               <img src="./assets/icons/renters.png" alt="" />
-              <h1 className="text-1xl sm:text-2xl font-bold mt-4 text-primaryColor tracking-wider">
+              <h1 className="sm:text-xl font-bold mt-4 text-primaryColor tracking-wider">
                 50K+ Renters
               </h1>
-              <p className="text-sm sm:text-[15px] sm:mt-2 tracking-wider">
+              <p className="text-xs sm:text-sm sm:mt-2 tracking-wider">
                 Believe in our services
               </p>
             </div>
             <div>
               <img src="./assets/icons/property.png" alt="" />
-              <h1 className="text-1xl sm:text-2xl font-bold mt-4 text-primaryColor tracking-wider">
+              <h1 className="sm:text-xl font-bold mt-4 text-primaryColor tracking-wider">
                 10K+ Property
               </h1>
-              <p className="hidden sm:block text-sm sm:text-[15px] sm:mt-2 tracking-wider">
+              <p className="hidden sm:block text-sm sm:mt-2 tracking-wider">
                 and house ready for occupancy
               </p>
-              <p className="sm:hidden text-sm sm:text-[15px] sm:mt-2 tracking-wider">
+              <p className="sm:hidden text-xs sm:text-[15px] sm:mt-2 tracking-wider">
                 Ready for occupancy
               </p>
             </div>
@@ -164,8 +165,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </div>
-
+      </section>
       {/* SEE MORE SECTION */}
       <section className="px-4 pt-10 pb-6 sm:px-10 lg:px-24 xxl:py-16 xxl:px-36 lg:flex">
         {/* LECT SEE MORE */}
@@ -244,6 +244,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+      {/* PROPERTIES */}
+      <Properties />
 
       {/* NEW WAY SECTION */}
       <section className="sm:hidden lg:flex px-4 pt-4 pb-6 sm:px-20 lg:px-24 xxl:py-16 xxl:px-36">
@@ -319,13 +321,12 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* MAKE IS EASY SECTION */}
       <section className=" bg-secondaryColor text-white">
         <div className="px-4 pt-6 pb-6 sm:px-10 lg:px-24 xxl:pt-16 xxl:px-36 lg:flex justify-between">
           <h1 className="text-center text-4xl text-white font-medium lg:w-[40%] lg:text-start lg:mt-4">
             We make it easy for{" "}
-            <span className="text-primaryColor">tenants</span> and{" "}
+            <span className="text-primaryColor ">tenants</span> and{" "}
             <span className="text-primaryColor">landlords</span>.
           </h1>
           <p className="text-white text-lg text-center tracking-wide mt-4 opacity-[50%] lg:w-[40%] lg:text-start">
@@ -341,9 +342,15 @@ export default function Home() {
             return (
               <div
                 className={`${easy.style} rounded-lg p-6 sm:w-[85%] mx-auto lg:mx-0 lg:min-w-[500px] xl:min-w-[700px] lg:h-max lg:flex gap-6`}>
-                <img src={easy.icon} alt="" className="lg:h-[60px] xl:h-[80px] lg:mt-4" />
+                <img
+                  src={easy.icon}
+                  alt=""
+                  className="lg:h-[60px] xl:h-[80px] lg:mt-4"
+                />
                 <div className="mt-4">
-                  <h1 className="text-2xl xl:text-4xl font-bold">{easy.title}</h1>
+                  <h1 className="text-2xl xl:text-4xl font-bold">
+                    {easy.title}
+                  </h1>
                   <p className="lg:text-base xl:text-xl tracking-wide opacity-[50%] font-light mt-4">
                     {easy.subtitle}
                   </p>
@@ -356,12 +363,23 @@ export default function Home() {
         {/*  */}
         <div className="px-4 pb-6 lg:pb-10 xxl:pb-16 sm:px-10 lg:px-24 xxl:px-36 xxl:mt-8 mt-2">
           <div className="">
-            <h1 className="text-center text-2xl font-bold lg:text-3xl">Are you a landlord?</h1>
-            <p className="text-center opacity-[70%] mt-2 lg:text-xl">Discover ways to increase your home's value and  get listed. No Spam.</p>
+            <h1 className="text-center text-2xl font-bold lg:text-3xl">
+              Are you a landlord?
+            </h1>
+            <p className="text-center opacity-[70%] mt-2 lg:text-xl">
+              Discover ways to increase your home's value and get listed. No
+              Spam.
+            </p>
           </div>
           <div className="mt-6 lg:bg-white lg:flex lg:rounded-lg lg:px-4 lg:py-4 sm:w-[75%] lg:w-[60%] mx-auto">
-            <input type="text" className="rounded-lg w-full py-3 px-4 lg:w-[100%] text-black outline-none" placeholder="Enter your email address" />
-            <button className="text-center py-3 lg:py-5 bg-primaryColor w-full rounded-lg mt-4 font-medium lg:mt-0 lg:w-[50%]">Submit</button>
+            <input
+              type="text"
+              className="rounded-lg w-full py-3 px-4 lg:w-[100%] text-black outline-none"
+              placeholder="Enter your email address"
+            />
+            <button className="text-center py-3 lg:py-5 bg-primaryColor w-full rounded-lg mt-4 font-medium lg:mt-0 lg:w-[50%]">
+              Submit
+            </button>
           </div>
         </div>
       </section>
