@@ -121,7 +121,7 @@ export default function Home() {
         </div>
 
         {/* RIGHT COLUMN HOME */}
-        <div className="hidden lg:block right-col lg:w-1/2 h-full bg-[url('assets/images/mapBg.png')] bg-cover">
+        <div className="hidden lg:block right-col lg:w-1/2 h-full bg-[url('./assets/images/mapBg.png')] bg-cover">
           <div className="bg-white w-max rounded-lg px-4 py-4 mt-12">
             <div className="flex gap-4 xxl:gap-5">
               <img
@@ -322,7 +322,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      
+
       {/* MAKE IS EASY SECTION */}
       <section className=" bg-secondaryColor text-white">
         <div className="px-5 pt-6 pb-6 sm:px-10 lg:px-24 xxl:pt-16 xxl:px-36 lg:flex justify-between">
