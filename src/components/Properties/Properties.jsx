@@ -126,16 +126,17 @@ export default function Properties() {
                 </div>
               </div>
               <div className="px-3 pb-4 flex gap-4">
-                <p className="text-xs font-extralight flex">
+                <p className="text-xs font-extralight flex items-center">
                   <i class="fa-solid fa-bed text-primaryColor"></i>&nbsp; &nbsp;
                   {item.bed} <span className="hidden lg:flex">&nbsp; Beds</span>
                 </p>
-                <p className="text-xs font-extralight flex">
+                <p className="text-xs font-extralight flex items-center">
                   <i class="fa-solid fa-bath text-primaryColor"></i>&nbsp;
                   &nbsp; {item.bath}{" "}
                   <span className="hidden lg:flex">&nbsp; Bathrooms</span>
                 </p>
-                <p className="text-xs font-extralight flex">
+                      <p className="text-xs font-extralight flex items-center
+                ">
                   <i class="fa-solid fa-ruler text-primaryColor"></i>&nbsp;
                   &nbsp; {item.dimen} m &sup2;{" "}
                   <span className="hidden lg:flex">&nbsp; Beds</span>
