@@ -30,13 +30,13 @@ export default function Home() {
     <div>
       <section className="lg:flex lg:h-[90vh] bg-purpleShade-50">
         {/* LEFT SECTION WELCOME */}
-        <div className="left-col flex flex-col justify-between lg:w-1/2 min-h-[80vh] lg:h-full px-4 pt-6 lg:pt-10 pb-6 sm:pb-12 sm:px-10 lg:pl-24 xxl:py-16 xxl:pr-30 xxl:pl-36 z-50 overflow-visible">
+        <div className="left-col flex flex-col justify-between lg:w-1/2 min-h-[80vh] lg:h-full px-5 pt-6 lg:pt-10 pb-6 sm:pb-12 sm:px-10 lg:pl-24 xxl:py-16 xxl:pr-30 xxl:pl-36 z-50 overflow-visible">
           <div>
             <h1 className="text-[42px] leading-[1] sm:leading-none sm:text-6xl lg:text-5xl text-center lg:text-start xxl:text-7xl font-semibold lg:tracking-wider">
               Buy, rent, or sell your property{" "}
               <br className="hidden xxl:block" /> easily
             </h1>
-            <p className="tracking-wider text-center lg:text-start text-[18px] sm:text-2xl lg:text-base xxl:text-[20px] mt-6">
+            <p className="tracking-wider text-center lg:text-start text-[19px] sm:text-2xl lg:text-base xxl:text-[20px] mt-6">
               A great platform to buy, sell, or even rent your{" "}
               <br className="hidden lg:block" /> properties without any
               commisions.
@@ -167,7 +167,7 @@ export default function Home() {
         </div>
       </section>
       {/* SEE MORE SECTION */}
-      <section className="px-4 pt-10 pb-6 sm:px-10 lg:px-24 xxl:py-16 xxl:px-36 lg:flex">
+      <section className="px-5 pt-10 pb-6 sm:px-10 lg:px-24 xxl:py-16 xxl:px-36 lg:flex">
         {/* LECT SEE MORE */}
         <div className="left-col lg:w-1/2">
           <div className="rounded-lg bg-purpleShade-100 h-[550px] sm:h-[700px] lg:w-[80%] lg:h-[600px] xxl:w-[80%] relative">
@@ -248,7 +248,7 @@ export default function Home() {
       <Properties />
 
       {/* NEW WAY SECTION */}
-      <section className="sm:hidden lg:flex px-4 pt-4 pb-6 sm:px-20 lg:px-24 xxl:py-16 xxl:px-36">
+      <section className="sm:hidden lg:flex px-5 pt-4 pb-6 sm:px-20 lg:px-24 xxl:py-16 xxl:px-36">
         <div className="h-max lg:h-[450px] w-full xxl:h-[500px] lg:flex bg-purpleShade-100 border-2 border-solid border-purpleShade-200 rounded-lg">
           {/* LEFT NEW WAY */}
           <div className="left-col lg:w-1/2 lg:h-full flex flex-col justify-between py-10 pl-8 pr-8 lg:pr-0 lg:pl-8 lg:py-14 xxl:pl-14">
@@ -323,7 +323,7 @@ export default function Home() {
       </section>
       {/* MAKE IS EASY SECTION */}
       <section className=" bg-secondaryColor text-white">
-        <div className="px-4 pt-6 pb-6 sm:px-10 lg:px-24 xxl:pt-16 xxl:px-36 lg:flex justify-between">
+        <div className="px-5 pt-6 pb-6 sm:px-10 lg:px-24 xxl:pt-16 xxl:px-36 lg:flex justify-between">
           <h1 className="text-center text-4xl text-white font-medium lg:w-[40%] lg:text-start lg:mt-4">
             We make it easy for{" "}
             <span className="text-primaryColor ">tenants</span> and{" "}
@@ -337,7 +337,7 @@ export default function Home() {
         </div>
 
         {/*  */}
-        <div className="px-4 pb-6 sm:px-10 lg:px-24 xxl:px-36 mt-2 flex flex-col lg:flex-row overflow-x-scroll gap-6 lg:gap-10 hide-scrollbar">
+        <div className="px-5 pb-6 sm:px-10 lg:px-24 xxl:px-36 mt-2 flex flex-col lg:flex-row overflow-x-scroll gap-6 lg:gap-10 hide-scrollbar">
           {make_it_easy.map((easy) => {
             return (
               <div
@@ -361,7 +361,7 @@ export default function Home() {
         </div>
 
         {/*  */}
-        <div className="px-4 pb-6 lg:pb-10 xxl:pb-16 sm:px-10 lg:px-24 xxl:px-36 xxl:mt-8 mt-2">
+        <div className="px-5 pb-6 lg:pb-10 xxl:pb-16 sm:px-10 lg:px-24 xxl:px-36 xxl:mt-8 mt-2">
           <div className="">
             <h1 className="text-center text-2xl font-bold lg:text-3xl">
               Are you a landlord?

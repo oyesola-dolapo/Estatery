@@ -71,7 +71,7 @@ export default function Properties() {
   ];
 
   return (
-    <section className="px-4 pb-2 sm:pb-6 sm:px-10 lg:px-24 lg:pt-10 xxl:px-36">
+    <section className="px-5 pb-2 sm:pb-6 sm:px-10 lg:px-24 lg:pt-10 xxl:px-36">
       <div className="flex flex-col-reverse gap-4 sm:flex-row sm:justify-between">
         <div className="flex sm:w-[50%] lg:w-[35%] bg-purpleShade-100 rounded-lg px-3 h-[4rem] py-2 border-2 border-solid border-purpleShade-200 justify-between">
           <div className="py-3 flex items-center justify-center border-2 border-solid border-purpleShade-200 gap-2 bg-white rounded-lg w-full">
