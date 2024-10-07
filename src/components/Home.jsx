@@ -30,7 +30,7 @@ export default function Home() {
     <div>
       <section className="lg:flex lg:h-[90vh] bg-purpleShade-50">
         {/* LEFT SECTION WELCOME */}
-        <div className="left-col flex flex-col justify-between lg:w-1/2 min-h-[80vh] lg:h-full px-5 pt-6 lg:pt-10 pb-6 sm:pb-12 sm:px-10 lg:pl-24 xxl:py-16 xxl:pr-30 xxl:pl-36 z-50 overflow-visible">
+        <div className="left-col flex flex-col justify-between lg:w-1/2 min-h-[80vh] lg:h-full px-5 pt-6 lg:pt-10 pb-6 sm:px-10 lg:pl-24 xxl:pt-10 xxl:pr-30 xxl:pl-36 z-50 overflow-visible">
           <div>
             <h1 className="text-[42px] leading-[1] sm:leading-none sm:text-6xl lg:text-5xl text-center lg:text-start xxl:text-7xl font-semibold lg:tracking-wider">
               Buy, rent, or sell your property{" "}
