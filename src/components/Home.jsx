@@ -5,7 +5,7 @@ import mapBg from "/assets/images/mapBg.webp";
 export default function Home() {
   const make_it_easy = [
     {
-      icon: "./assets/images/virtualHome.png",
+      icon: "./assets/icons/virtualHome.png",
       title: "Virtual home tour",
       subtitle:
         "You can communicate directly with landlords and we provide you with virtual tour before you buy or rent the property.",
@@ -29,7 +29,7 @@ export default function Home() {
 
   return (
     <div>
-      <section className="lg:flex lg:h-[90vh] bg-purpleShade-50">
+      <section className="lg:flex bg-purpleShade-50">
         {/* LEFT SECTION WELCOME */}
         <div className="left-col flex flex-col justify-between lg:w-1/2 min-h-[80vh] lg:h-full px-5 pt-6 lg:pt-10 pb-6 sm:px-10 lg:pl-24 xxl:pt-10 xxl:pr-30 xxl:pl-36 z-50 overflow-visible">
           <div>
@@ -123,7 +123,7 @@ export default function Home() {
 
         {/* RIGHT COLUMN HOME */}
         <div
-          className="hidden lg:block right-col lg:w-1/2 h-full bg-cover"
+          className="hidden lg:block right-col lg:w-1/2 min-h-full bg-cover relative"
           style={{ backgroundImage: `url(${mapBg})` }}>
           <div className="bg-white w-max rounded-lg px-4 py-4 mt-12">
             <div className="flex gap-4 xxl:gap-5">
@@ -166,6 +166,28 @@ export default function Home() {
                 <p className="opacity-[50%] text-xs">Process time</p>
               </div>
             </div>
+          </div>
+
+          <div className="hidden lg:block bg-black w-[17rem] p-4 pb-8 absolute bottom-0 right-0 text-white rounded-tl-lg">
+            <div className="flex justify-between">
+              <p className="font-bold">Excellent</p>
+              <p className="flex gap-1 items-center">
+                <img
+                  src="./assets/icons/trustPilot.png"
+                  alt=""
+                  className="w-max object-contain"
+                />
+                Trustpilot
+              </p>
+            </div>
+            <div className="my-4 flex gap-1">
+              <i class="fa-solid fa-star text-yellow-400"></i>
+              <i class="fa-solid fa-star text-yellow-400"></i>
+              <i class="fa-solid fa-star text-yellow-400"></i>
+              <i class="fa-solid fa-star text-yellow-400"></i>
+              <i class="fa-solid fa-star text-yellow-400"></i>
+            </div>
+            <p className="text-xs">From 3,200 reviews</p>
           </div>
         </div>
       </section>

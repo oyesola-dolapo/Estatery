@@ -5,28 +5,28 @@ export default function Nav() {
   const navLinks = [
     {
       title: "Rent",
-      link: "/rent",
+      link: "/#",
     },
     {
       title: "Buy",
-      link: "/rent",
+      link: "/#",
     },
     {
       title: "Sell",
-      link: "/rent",
+      link: "/#",
     },
     {
       title: "Manage properties",
-      link: "/rent",
+      link: "/#",
     },
     {
       title: "Resources",
-      link: "/rent",
+      link: "/#",
     },
   ];
 
   return (
-    <div className="lg:px-10 xxl:px-16 lg:py-6 px-4 py-4 bg-purpleShade-50 flex justify-between z-99 backdrop-filter backdrop-blur-sm shadow-md">
+    <div className="lg:px-10 xxl:px-16 lg:py-6 px-4 py-4 bg-purpleShade-50 flex justify-between z-10 backdrop-filter backdrop-blur-sm shadow-md relative">
       <div className="flex items-center gap-14">
         <div className="logo flex items-center gap-1">
           <img src="./assets/icons/logo.png" className="h-6" alt="" />
